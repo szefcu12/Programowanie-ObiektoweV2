@@ -27,7 +27,7 @@ public class Main {
 
         for (Car car: cars) {
             try {
-                System.out.println(car.getHorse_power() + " " + car.getDoor_count());
+                System.out.println("Auto o mocy " + car.getHorse_power() + " KM posiadające " + car.getDoor_count() + " drzwi.");
                 if(car instanceof Personal) {
                     Personal personal = ((Personal) car);
                     System.out.println(personal.getHasIsoFix());
