@@ -6,11 +6,11 @@ import net.kkopecPO.cars.CarInstruction;
 public class AudiInstruction implements CarInstruction {
     @Override
     public String getCarName() {
-        return "Fiat";
+        return "Audi";
     }
 
     @Override
     public Car getNewInstance() {
-        return new Audi(85,3,true);
+        return new Audi(130,5,true);
     }
 }

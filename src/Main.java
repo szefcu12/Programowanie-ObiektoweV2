@@ -32,11 +32,11 @@ public class Main {
                     Personal personal = ((Personal) car);
                     System.out.println(personal.getHasIsoFix());
                     if(personal instanceof Volkswagen) {
-                        Volkswagen volvo = ((Volkswagen) personal);
-                        System.out.println(volvo.getHeatedSeats());
+                        Volkswagen vw = ((Volkswagen) personal);
+                        System.out.println(vw.getHeatedSeats());
                     } else if (personal instanceof Audi) {
-                        Audi fiat = ((Audi) personal);
-                        System.out.println(fiat.getIsStolen());
+                        Audi audi = ((Audi) personal);
+                        System.out.println(audi.getIsStolen());
                     }
                 }
             } catch (NullPointerException error) {
