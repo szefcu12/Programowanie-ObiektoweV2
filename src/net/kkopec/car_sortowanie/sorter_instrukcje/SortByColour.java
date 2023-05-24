@@ -9,7 +9,7 @@ public class SortByColour implements Comparator<Car> {
     public int compare(Car o1, Car o2) {
         int value = o1.getColour().compareTo(o2.getColour());
         if (value == 0){
-            System.out.println("Kolory takie same");
+            System.out.println("Colors are the same");
         }
         return value;
     }

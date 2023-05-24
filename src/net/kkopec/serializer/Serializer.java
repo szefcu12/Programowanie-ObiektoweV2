@@ -16,13 +16,13 @@ public class Serializer {
             in.close();
             fileIn.close();
         } catch (FileNotFoundException e) {
-            System.out.println("Plik nie istnieje!");
+            System.out.println("File does not exist!");
             return null;
         } catch (IOException i) {
             i.printStackTrace();
             return null;
         } catch (ClassNotFoundException c) {
-            System.out.println("Klasa nieznaleziona");
+            System.out.println("Class not found");
             c.printStackTrace();
             return null;
         }
@@ -36,7 +36,7 @@ public class Serializer {
             out.writeObject(serialized_objects);
             out.close();
             fileOut.close();
-            System.out.print("Dane zapisane w:  " + output_file);
+            System.out.print("Data stored in:  " + output_file);
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

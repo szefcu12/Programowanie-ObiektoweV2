@@ -23,7 +23,7 @@ public class Factory {
             CarInterface instruction = this.instructions.get(name);
             return instruction.getNewInstance(arguments);
         } catch (NullPointerException error) {
-            System.out.println("Brak takiego auta");
+            System.out.println("No such car");
         } catch (ArgumentListTooShortException error) {
             System.out.println(error);
         }
