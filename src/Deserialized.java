@@ -1,5 +1,5 @@
-import net.kkopecPO.cars.Car;
-import net.kkopecPO.serializer.Serializer;
+import net.kkopec.cars.Car;
+import net.kkopec.serializer.Serializer;
 import java.util.List;
 
 public class Deserialized {
