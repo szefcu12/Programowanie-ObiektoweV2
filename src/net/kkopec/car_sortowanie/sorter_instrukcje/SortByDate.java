@@ -9,7 +9,7 @@ public class SortByDate implements Comparator<Car> {
     public int compare(Car o1, Car o2) {
         int value = o1.getManufacture_time().compareTo(o2.getManufacture_time());
         if (value == 0){
-            System.out.println("Dates are the same");
+            System.out.println("Daty są takie same");
         }
         return value;
     }
